@@ -1,4 +1,4 @@
-### Clone form git
+### Clone from git
 
 
 Install it and run:
@@ -8,6 +8,8 @@ navigate into the directory you just cloned the project to
 npm install
 npm run dev
 ```
+
+Open a browser on http://localhost:3000
 
 
 ###run test
