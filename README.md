@@ -2,6 +2,7 @@
 
 
 Install it and run:
+navigate into the directory you just cloned the project to
 
 ```bash
 npm install
