@@ -1,0 +1,69 @@
+{
+  "name": "weatherwidget",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "degrees-to-direction": "^1.1.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "7.0.2",
+    "next-routes": "^1.4.2",
+    "prop-types": "^15.6.2",
+    "react": "16.6.3",
+    "react-dom": "16.6.3"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/jest.setup.js",
+    "transform": {
+      ".*": "babel-jest"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/.next/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "//": "This is our babel config, I prefer this over a .babelrc file",
+  "babel": {
+    "env": {
+      "development": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": []
+      },
+      "production": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": []
+      },
+      "test": {
+        "presets": [
+          [
+            "env"
+          ],
+          "react"
+        ]
+      }
+    }
+  }
+}

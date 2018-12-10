@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WeatherWidget/> the widget renders and match snapshot 1`] = `
+<div
+  className="widget"
+  style={
+    Object {
+      "style": "margin: 10px",
+      "width": "300px",
+    }
+  }
+>
+  <div
+    className="panel panel-info"
+  >
+    <div
+      className="panel-heading"
+    >
+      Weather in 
+      <b>
+        odense
+      </b>
+    </div>
+    <ul
+      className="list-group"
+    >
+      <li
+        className="list-group-item"
+      >
+        Temperature: 
+        <b>
+          10
+          °C
+        </b>
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Humidity: 
+        <b>
+          75
+        </b>
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Wind: 
+        <b>
+          5
+           m/s fra 
+          nord
+        </b>
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <form
+          className="form-inline"
+          id="weatherwidget"
+          method="GET"
+          onSubmit={[Function]}
+        >
+          <div
+            className="form-group"
+          >
+            <input
+              className="form-control"
+              id="city"
+              name="city"
+              onChange={[Function]}
+              placeholder="City"
+              type="text"
+              value="odense"
+            />
+          </div>
+          <button
+            className="btn btn-default"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
