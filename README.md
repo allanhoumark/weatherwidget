@@ -1,7 +1,7 @@
-### Clone from git
+### How to set it up
 
+Clone from github
 
-Install it and run:
 navigate into the directory you just cloned the project to
 
 ```bash
@@ -12,7 +12,7 @@ npm run dev
 Open a browser on http://localhost:3000
 
 
-###run test
+### run test
 ```bash
 npm run test
 ```
