@@ -12,11 +12,12 @@ const Index = (props) => <div>
 
 
 Index.getInitialProps = async ({query}) => {
+  var city = undefined;
   // get city from uri or default
   try {
-    var city = query.city ? decodeURIComponent(query.city) : 'copenhagen';
+    city = query.city ? decodeURIComponent(query.city) : 'copenhagen';
   } catch(error){
-    var city = 'copenhagen';
+    city = 'copenhagen';
   }
 
   // call helper for API data or default empty dataset

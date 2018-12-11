@@ -178,7 +178,7 @@ function (_React$Component) {
       var _this2 = this;
 
       var widgetStyle = {
-        style: 'margin: 10px',
+        margin: '10px',
         width: '300px'
       };
       var panelStyle = classnames__WEBPACK_IMPORTED_MODULE_2___default()('panel', 'panel-info', {
@@ -629,8 +629,8 @@ function () {
         switch (_context.prev = _context.next) {
           case 0:
             query = _ref.query;
+            city = undefined; // get city from uri or default
 
-            // get city from uri or default
             try {
               city = query.city ? decodeURIComponent(query.city) : 'copenhagen';
             } catch (error) {
@@ -638,14 +638,14 @@ function () {
             } // call helper for API data or default empty dataset
 
 
-            _context.next = 4;
+            _context.next = 5;
             return _helpers_weatherDataHelper__WEBPACK_IMPORTED_MODULE_4__["default"].fecthSubsetWeatherDataOrDefault(city);
 
-          case 4:
+          case 5:
             result = _context.sent;
             return _context.abrupt("return", result);
 
-          case 6:
+          case 7:
           case "end":
             return _context.stop();
         }
