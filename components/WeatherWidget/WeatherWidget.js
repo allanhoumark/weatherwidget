@@ -31,7 +31,7 @@ class WeatherWidget extends React.Component {
 
     render() {
         const widgetStyle = {
-            style: 'margin: 10px',
+            margin: '10px',
             width: '300px'
         }
         
